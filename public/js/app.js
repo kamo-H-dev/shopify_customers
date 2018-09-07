@@ -47290,7 +47290,7 @@ exports = module.exports = __webpack_require__(43)(false);
 
 
 // module
-exports.push([module.i, "\n.v-select .dropdown-toggle .clear { display: none;\n}\n.invalid-phone-number {\n    border: 1px solid red;\n}\n.dropdown-toggle:after{\n    content: none;\n    display: none;\n}\n.v-select.searchable .dropdown-toggle {\n    height: 37px;\n}\n.remove_customer{\n    float: right;\n    border: none;\n    background: none;\n    cursor: pointer;\n    font-size: 19px;\n}\n.customer_item{\n   border-bottom: 1px solid rgba(0, 0, 0, 0.125);\n}\n\n", ""]);
+exports.push([module.i, "\n.v-select .dropdown-toggle .clear { display: none;\n}\n.invalid-phone-number {\n    border: 1px solid red;\n}\n.dropdown-toggle:after{\n    content: none;\n    display: none;\n}\n.v-select.searchable .dropdown-toggle {\n    height: 37px;\n}\n.remove_customer{\n    float: right;\n    border: none;\n    background: none;\n    cursor: pointer;\n    font-size: 19px;\n}\n.customer_item{\n   border-bottom: 1px solid rgba(0, 0, 0, 0.125);\n}\n.add_new_item {\n    float: right;\n}\n\n", ""]);
 
 // exports
 
@@ -47787,8 +47787,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
 
 function phoneNumber(inputtxt) {
     if (inputtxt === undefined || inputtxt === null) {
@@ -48016,17 +48014,15 @@ var render = function() {
           2
         ),
         _vm._v(" "),
-        _c("div", [
-          _c(
-            "button",
-            {
-              staticClass: "btn btn-primary pull-right",
-              attrs: { type: "button" },
-              on: { click: _vm.addNewItem }
-            },
-            [_vm._v("+ Add new")]
-          )
-        ]),
+        _c(
+          "button",
+          {
+            staticClass: "btn btn-primary add_new_item",
+            attrs: { type: "button" },
+            on: { click: _vm.addNewItem }
+          },
+          [_vm._v("+ Add new")]
+        ),
         _vm._v(" "),
         _c(
           "button",

@@ -25,9 +25,7 @@
                     </div>
 
                 </div>
-                <div>
-                    <button type="button" class="btn btn-primary pull-right" @click="addNewItem">+ Add new</button>
-                </div>
+                <button type="button" class="btn btn-primary add_new_item" @click="addNewItem">+ Add new</button>
                 <button class="btn btn-primary" @click="saveCustomers">Save Customers</button>
             </div>
         </div>
@@ -177,6 +175,9 @@
     }
     .customer_item{
        border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    }
+    .add_new_item {
+        float: right;
     }
 
 </style>
